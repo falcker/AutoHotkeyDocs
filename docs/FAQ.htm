@@ -288,7 +288,7 @@ Submit(*)
 <p>Use <a href="Variables.htm#h">built-in variables for hotkeys</a> as follows:</p>
 <pre>~Ctrl::
 {
-    if (ThisHotkey = A_PriorHotkey &amp;&amp; A_TimeSincePriorHotkey &lt; 200)
+    if (A_ThisHotkey = A_PriorHotkey &amp;&amp; A_TimeSincePriorHotkey &lt; 200)
         MsgBox "double-press"
 }</pre>
 <h3 id="HotContext">How can a <a href="Hotkeys.htm">hotkey</a> or <a href="Hotstrings.htm">hotstring</a> be made exclusive to  certain program(s)? In other words, I want a certain key to act as it normally does except when a specific window is active.</h3>
